@@ -11,7 +11,7 @@ class BasePage
         Cypress.on('uncaught:exception', (err, runnable) => {
             return !err.message.includes(`Cannot read property '__error' of null`);
           })
-          cy.wait(2000)
+        //  cy.wait(2000)
     }
 }
 

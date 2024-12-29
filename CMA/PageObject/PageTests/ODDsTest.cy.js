@@ -2,7 +2,7 @@ import ODDsPage from "../PageElements/ODDsPage.cy"
 import HomePage from "../PageElements/HomePage.cy"
 import BasePage from "../PageElements/BasePage.cy"
 
-describe('CMA Implementation', () =>{
+describe('CMA ODDsPage Implementation', () =>{
 
     before('Clean local session storage and cookies', () => {
         BasePage.clearContents()

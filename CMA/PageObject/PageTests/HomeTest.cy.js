@@ -1,7 +1,7 @@
 import BasePage from "../PageElements/BasePage.cy"
 import HomePage from "../PageElements/HomePage.cy"
 
-describe('CMA Implementation', () =>{
+describe('CMA HomePage Implementation', () =>{
 
     before('Clean local session storage and cookies', () => {
         BasePage.clearContents()

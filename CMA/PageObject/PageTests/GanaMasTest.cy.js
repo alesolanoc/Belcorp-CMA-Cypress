@@ -2,7 +2,7 @@ import GanaMasPage from "../PageElements/GanaMasPage.cy"
 import HomePage from "../PageElements/HomePage.cy"
 import BasePage from "../PageElements/BasePage.cy"
 
-describe('CMA Implementation', () =>{
+describe('CMA Gana+Page Implementation', () =>{
 
     before('Clean local session storage and cookies', () => {
         BasePage.clearContents()
