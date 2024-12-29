@@ -1,19 +1,14 @@
+import BasePage from "../PageElements/BasePage.cy"
 import HomePage from "../PageElements/HomePage.cy"
 
 describe('CMA Implementation', () =>{
 
     before('Clean local session storage and cookies', () => {
-        cy.clearAllLocalStorage()
-        cy.clearAllSessionStorage()
-        cy.clearCookies()
+        BasePage.clearContents()
     })
 
     beforeEach(() => {
-        cy.visit('http://localhost:5173/',{failOnStatusCode: false}) 
-        Cypress.on('uncaught:exception', (err, runnable) => {
-            return !err.message.includes(`Cannot read property '__error' of null`);
-          })
-          cy.wait(2000)
+        BasePage.goToURL()
     })
 
     it('Validate if Iam in HomePage then Inicio label should be displayed', () => {
